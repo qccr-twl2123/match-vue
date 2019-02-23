@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <button class="btn btn-primary">确定</button>
-    <button class="btn btn-success">使用</button>
-    <button class="btn btn-danger" @click="toNew">注意</button>
-    <router-link to="/girl">girl</router-link>
-
-    <router-view/>
+    <el-container>
+      <el-header>Header</el-header>
+      <el-main><router-view/></el-main>
+    </el-container>
   </div>
 </template>
 
 <script>
+import
 export default {
   name: 'App',
   methods: {
